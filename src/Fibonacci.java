@@ -5,10 +5,7 @@ public class Fibonacci {
 
     public List<Integer> gerarFibonacci(int n){
         int a = 0, b = 1, c;
-        if (n <= 0) {
-            throw new IllegalArgumentException("O valor de n deve ser maior que 0.");
-        }
-        System.out.print(a + " " + b); // Imprime os dois primeiros termos
+        System.out.print(a + " " + b); 
         List<Integer> sequenciaFibonacci = new ArrayList<>();
 
         sequenciaFibonacci.add(a);
@@ -22,9 +19,7 @@ public class Fibonacci {
             sequenciaFibonacci.add(c);
             a = b;
             b = c;
-            
-
-            
+        
         }
         return sequenciaFibonacci;
     }
